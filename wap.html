@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum excepturi cupiditate, tempore voluptas fugit inventore.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, exercitationem voluptatibus libero ipsam blanditiis sunt?</p>
+
+    <a href="#" id="size-12">12</a>
+    <a href="#" id="size-14">14</a>
+    <a href="#" id="size-16">16</a>
+
+
+    <script type="text/javascript">
+        function makeSize(size){
+            return function(){
+                document.body.style.fontSize=size+'pt';
+            }
+        }
+        var size12=makeSize(12); 
+        var size14=makeSize(14);
+        var size16=makeSize(16);
+        document.getElementById("size-12").onclick=size12;
+        document.getElementById("size-14").onclick=size14;
+        document.getElementById("size-16").onclick=size16;
+    
+        </script>
+    
+</body>
+</html>
